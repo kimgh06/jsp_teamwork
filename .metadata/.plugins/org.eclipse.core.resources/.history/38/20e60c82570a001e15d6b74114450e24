@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:include page="./header.jsp"></jsp:include>
+<form method="post" action="action.jsp" name="frm" style="display: flex; justify-content: center; align-items: center">
+<table>
+	<tr><td>이름</td><td><input name="name"/></td></tr>
+	<tr><td>입원일</td><td><inputplaceholder="띄어쓰기 없이" name="clinicdate"/></td></tr>
+	<tr><td>병명</td><td><input name="reason"/></td></tr>
+	<tr><td>생년월일</td><td><input placeholder="띄어쓰기 없이" name="birthday"/></td></tr>
+	<tr><td>담당의사 번호</td><td><input name="doctornum"/></td></tr>
+	<tr><td colspan="2" style='text-align: center'><input type="button" value="보내기"><input type="button" value="되돌아가기"></td></tr>
+</table>
+</form>
+</html>

@@ -1,0 +1,28 @@
+function addCheck(){
+	if(frm.resvno.name.length==0){
+		alert("예약번호가 입력되지 않았습니다");
+		frm.resvno.value.focus();
+		return false;
+	}else if(frm.empno.value.length==0){
+		alert("사원번호가 입력되지 않았습니다");
+		frm.empno.value.focus();
+		return false;
+	}else if(frm.resvdate.value.length==0){
+		alert("근무일자가 입력되지 않았습니다");
+		frm.resvdate.value.focus();
+		return false;
+	}else if(frm.seatno.value.length==0){
+		alert("좌석번호가 입력되지 않았습니다");
+		frm.seatno.value.focus();
+		return false;
+	}
+	alert("등록되었습니다.");
+	document.frm.submit();
+	return true;
+}
+
+function res(){
+	if(confirm("정보를 지우고 처음부터 다시시작합니까?")){
+		document.frm.reset();
+	}
+}
